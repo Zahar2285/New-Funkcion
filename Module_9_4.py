@@ -1,12 +1,9 @@
-# Задача 1: Lambda-функция
 first = 'Мама мыла раму'
 second = 'Рамена мало было'
 
 result = list(map(lambda x, y: x == y, first, second))
 print(result)
 
-
-# Задача 2: Замыкание
 def get_advanced_writer(file_name):
     def write_everything(*data_set):
         with open(file_name, 'a', encoding='utf-8') as file:
@@ -19,7 +16,6 @@ def get_advanced_writer(file_name):
 write = get_advanced_writer('example.txt')
 write('Это строчка', ['А', 'это', 'уже', 'число', 5, 'в', 'списке'])
 
-# Задача 3: Метод __call__
 from random import choice
 
 
